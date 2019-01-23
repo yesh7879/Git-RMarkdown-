@@ -127,13 +127,18 @@ $(document).ready(function () {
 </div>
 
 
-<div id="exercise-outcomes" class="section level2">
-<h2>Exercise Outcomes</h2>
-<p>These exercises are intended for you to get more familiar with using GitHub, GitKraken, RStudio, and R Markdown. Here are your tasks:</p>
+<p>These exercises are intended for you to get more familiar with using GitHub, GitKraken, RStudio, and R Markdown.</p>
+<p>Say you work for Uber and your work revolves around the computer vision technologies involved in self-driving cars. You know that Lyft has a publicly available repository on GitHub which contains code that will do many of the things you want to do. So, because you don’t want to reinvent the wheel, you want to get the code from Lyft’s repository and then make whatever changes or add-ons are needed for your particular project. Obviously, Lyft doesn’t want anyone in the world to be able to change the code that they have produced. So, although Lyft allows people to use their tools, they do not allow people who are not designated as “Contributors” on GitHub to “push” changes to Lyft’s repository. Thus, you want to (1) clone Lyft’s repository to your local machine, (2) create your own GitHub repository where you can push the changes you’ve made to Lyft’s code, (3) make changes to Lyft’s code, and (4) push those changes to your newly created repository.</p>
+<p>That’s the motivational example. Here are the steps you should take:</p>
 <ol style="list-style-type: decimal">
-<li></li>
+<li>Create a folder on your computer called “Git_RMarkdown”</li>
+<li>Using GitKraken, clone the GitHub repository named “Git-RMarkdown” found (<a href="https://github.com/erikj540/Git-RMarkdown" class="uri">https://github.com/erikj540/Git-RMarkdown</a>) to your newly created Git_RMarkdown folder. The GitHub repository is called a “remote” repository because it is not on your local machine. The word “repository” is often shortened to “repo” for convenience.</li>
+<li>Cloning has created a copy of the remote “Git_RMarkdown” repo on your local machine. Open this new local repository in GitKraken.</li>
+<li>Right now, when you make changes to the files in Git_RMarkdown and want to push those changes to GitHub, your local repository thinks it should push your changes to TA Erik’s repo (located here: <a href="https://github.com/erikj540/Git-RMarkdown" class="uri">https://github.com/erikj540/Git-RMarkdown</a>) since that’s where you cloned from. However, Erik has NOT added you as a “Contributor” to this remote repo so if you try to push your changes you will get an error. So, you should make a repository on your personal GitHub account where you can push your changes. Create a new repository named “Git-RMarkdown” in GitHub and copy the URL to this new repository.</li>
+<li>The repository on your computer and the new repository on GitHub do not know about each other yet. You need to tell GitKraken what GitHub repository to communicate with. You do this by changing the “origin.” In the left-hand pane of GitKraken, under “REMOTE”, right click “origin” and click “Edit origin”. Paste the URL from step 4 into the “Pull URL” and “Push URL” fields and click “Edit Remote”. Now GitKraken and GitHub should be able to communicate.</li>
+<li>From the Git_RMarkdown folder, open the file “lab02_jan23.Rmd” in RStudio and add a bulleted list to the bottom of the document. You’ll likely need to do a quick Google search to find out how to make a bulleted list in R Markdown. Your bulleted list should have two items: (1) your name and (2) your major. Save your changes to this file.</li>
+<li>You have made changes to a file in your local repository. We now want to push our changes to GitHub. To do so, in GitKraken, you should now add, commit, and finally push your changes. If you refresh GitHub, the changes you’ve made should now be on GitHub.</li>
 </ol>
-</div>
 
 
 

@@ -8,9 +8,7 @@ output:
   pdf_document: default
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 ## Exercise Outcomes
 These exercises are intended for you to get more familiar with using GitHub, GitKraken, RStudio, and R Markdown. Here are your tasks:
